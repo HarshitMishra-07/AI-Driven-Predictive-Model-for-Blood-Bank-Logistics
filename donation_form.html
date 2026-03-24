@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Donation Form</title>
+    <link rel="stylesheet" type="text/css" href="./donation_form.css">
+    <link rel="icon" href="hivelogo.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+    <img src="hivelogo.png" alt="Logo" style="width: 35%;">
+    </div>
+    <h1>Blood Donation Form</h1>
+</header>
+
+<div class="form-container">
+    <h2>Sign Up to Donate Blood</h2>
+
+    <!-- Error message area -->
+    <div id="error-message" class="error-message"></div>
+
+    <form id="donation-form" action="submit_form.php" method="POST" onsubmit="return validateForm()">
+        
+        <!-- Personal Information -->
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email"required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number"required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" placeholder="Enter Your DOB"required>
+        </div>
+        <!--Gender-->
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender"required>
+                <option value="">Select your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <!-- Medical History -->
+        <div class="form-group">
+            <label for="medical-history">Do you have any medical conditions? (e.g., diabetes, heart disease, etc.)</label>
+            <textarea id="medical-history" name="medical-history" rows="4" placeholder="If yes, please specify..." required></textarea>
+        </div>
+
+        <!-- Donation History -->
+        <div class="form-group">
+            <label for="last-donated">When did you last donate blood?</label>
+            <input type="date" id="last-donated" name="last-donated" required>
+        </div>
+
+        <!-- Eligibility -->
+        <div class="form-group">
+            <label for="donation-type">Blood Type:</label>
+            <select id="donation-type" name="donation-type" required>
+                <option value="">Select your blood type</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+        </div>
+
+        <!-- Consent -->
+        <div class="form-group">
+            <label>
+                <strong>I consent to donate blood and understand the risks involved</strong>.
+            </label>
+            <input type="checkbox" id="consent" name="consent" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="reset" class="submit-btn">Reset</button>
+    </form>
+</div>
+
+
+<script>
+    function validateForm() {
+        // Clear any previous error messages
+        document.getElementById('error-message').innerHTML = '';
+        
+        // Check if the user has checked the consent checkbox
+        const consent = document.getElementById('consent').checked;
+        if (!consent) {
+            document.getElementById('error-message').innerHTML = 'You must consent to donate blood.';
+            return false;
+        }
+        
+        window.location.href = 'donation_redirect.html';
+        return false;
+    }
+</script>
+
+</body>
+</html>

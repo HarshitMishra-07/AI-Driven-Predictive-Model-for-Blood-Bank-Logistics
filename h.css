@@ -1,0 +1,413 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('dna_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    /* background: linear-gradient(to bottom, hsla(0, 84%, 85%, 0.963), transparent); */
+}
+
+/* Header Section */
+header {
+    position: relative;
+    height: 20vh;
+    background-color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #ffe0e9;
+    
+}
+
+header .logo {
+    
+    position: absolute;
+    top: -20px;
+    right: -100px;
+    /* Adjust size as needed */
+    width: 450px;
+    
+}
+
+header .header-content h1 {
+    font-size: 2.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #b22222;
+    font-weight: 600;  
+}
+
+header .header-content h3 {
+    color: #b22222;
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+header .header-content p {
+    color: #b22222;
+    font-size: 1.3em;
+    font-family: cursive;
+    font-weight: 450;
+    padding-top: 10px;
+}
+
+/* Video Section */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.video-section .intro-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hamburger-menu {
+    position: absolute;
+    margin:10px;
+    font-size: 30px;
+    color: rgb(175, 31, 31);
+    cursor: pointer;
+
+}
+.hamburger-menu:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+/* Sliding Menu */
+#slide-menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #b22222;
+    transition: left 0.3s ease;
+    padding-top: 20px;
+    overflow-y: auto;
+    z-index: 9;
+}
+
+#slide-menu.open {
+    left: 0;
+}
+
+#slide-menu ul {
+    list-style: none;
+    padding: 20px;
+    color: white;
+}
+
+#slide-menu ul li {
+    margin-bottom: 20px;
+}
+
+#slide-menu ul li h3 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+hr { 
+    margin: 2em auto;
+     height: 0.5px;
+      background-color:
+       rgb(101, 4, 4);
+       border: none; }
+
+#slide-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#slide-menu ul li a:hover {
+    background-color: #ffdd00;
+    color: #333;
+} 
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+
+    background-color: #ffdd00;
+    padding: 5px 5px;
+}
+
+
+/* Quick Access Buttons */
+.quick-access {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quick-btn {
+    padding: 25px 30px;
+    font-size: 1.6em;
+    font-weight: 550;
+    margin: 30px;
+    background-color:#b22222;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+.quick-btn a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+.quick-btn:hover {
+    background-color: #0892fb;
+    
+}
+.h2{
+    margin-left: 10px;
+    margin-bottom: 1px;
+}
+
+/* Tabs Section */
+.tabs {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 30px;
+    padding: 20px;
+}
+/* Styling each tab */
+.tab {
+    width: 220px;
+    height: 240px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Top section styling */
+.tab-top {
+    background-color: #e6d7ff; /* Adjust color as needed */
+    flex: 0 0 60%; /* 60% height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Bottom section styling */
+.tab-bottom {
+    flex: 0 0 40%; /* 40% height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px; /* Centered padding */
+    /* background-image: url("blood-donation-icon.png"); /* Background image specific to each tab */
+    /* background-size: 100px 100px;  */
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top: 2px solid #ccc; /* Optional border between sections */
+}
+
+.tab1 .tab-bottom img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab2 .tab-bottom img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab3 .tab-bottom img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab4 .tab-bottom img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab5 .tab-bottom img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Specific styles for each tab background color and image */
+.tab1 .tab-top {
+    background-color: #b22222;
+    height: 45%;
+    color: white;
+}
+
+.tab2 .tab-top {
+    background-color: #b22222;
+    height: 45%;
+    color: white;
+}
+
+.tab3 .tab-top {
+    background-color: #b22222;
+    height: 45%;
+    color: white;
+
+}
+
+.tab4 .tab-top {
+    background-color: #b22222;
+    height: 45%;
+    color: white;
+
+}
+
+.tab5 .tab-top {
+    background-color: #b22222;
+    height: 45%;
+    color: white;
+
+}
+
+
+
+.tabs a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.tab-icon {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    position: absolute;
+    bottom: 10px; /* Adjust distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tab:hover {
+    transform: translateY(-10px);
+}
+
+.tab h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+/* .tab p {
+    font-size: 1.1em;
+    color: #555;
+} */
+
+/* Footer Section */
+footer {
+    background-color: #b5b5b5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+footer ul li a:hover {
+    color: #ffdd00;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .quick-btn {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .video-section .intro-video {
+        height: 50vh;
+    }
+}
+@media (max-width: 600px) {
+    .logo-container {
+        width: 80px;
+    }
+}
+
+.cont{
+    margin-top: 0;
+    margin-left: 20px;
+    
+}
+
+.content-head{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #b22222;
+    font-size: 2.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation FAQs</title>
+    <link rel="stylesheet" type="text/css" href="./faqs.css">
+    <link rel="icon" href="hivelogo.png" type="image/x-icon">
+       
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const questions = document.querySelectorAll(".faq-question");
+            questions.forEach(question => {
+                question.addEventListener("click", () => {
+                    const answer = question.nextElementSibling;
+                    answer.classList.toggle("show-answer");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header><h1>Blood Donation FAQs</h1></header>
+    <div class="container">
+      
+
+        <div class="faq-item">
+            <div class="faq-question">Who is eligible to donate blood?</div>
+            <div class="faq-answer">Generally, healthy adults between 18 and 65 years old, weighing at least 50 kg (110 lbs), can donate blood. Specific eligibility criteria may vary based on health conditions, medication use, and recent travel. Always check with your local blood bank for detailed requirements.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Are there any medical conditions that disqualify me from donating blood?</div>
+            <div class="faq-answer">Certain conditions like HIV/AIDS, hepatitis, cancer (recent or active), and some chronic illnesses may disqualify you from donating. Temporary disqualifications include recent illness, recent surgery, pregnancy, or low hemoglobin levels. Your blood bank will have a full list of eligibility criteria.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How often can I donate blood?</div>
+            <div class="faq-answer">You can typically donate whole blood every 8 weeks (56 days) and platelets every 7 days, up to 24 times a year. Plasma donation intervals vary but are usually around every 28 days. Your donation type and health status affect the interval.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is blood donation safe?</div>
+            <div class="faq-answer">Yes, blood donation is safe. Sterile equipment is used for each donation to prevent infections. Minor side effects like dizziness may occur but are typically short-lived.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How should I prepare for donating blood?</div>
+            <div class="faq-answer">Before donating, drink plenty of water, have a light meal (avoid fatty foods), and get a good night's sleep. Avoid alcohol and heavy exercise on the day of donation.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What should I do after donating blood?</div>
+            <div class="faq-answer">After donating, rest for a few minutes, drink plenty of fluids, and avoid strenuous activities for the rest of the day. Eating a healthy snack post-donation can help with recovery.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Will I feel weak or tired after donating?</div>
+            <div class="faq-answer">Some people may feel lightheaded or tired, but most resume normal activities shortly after donation. Be sure to rest, stay hydrated, and eat a balanced meal afterward.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How long does it take for my body to replace the donated blood?</div>
+            <div class="faq-answer">Plasma is replaced within hours, while red blood cells take a few weeks. Your body will naturally replenish the blood volume in about 48 hours, but iron levels may take a bit longer.</div>
+        </div>
+
+        <!-- Additional FAQs go here -->
+
+    </div>
+    <a href="home.html" class="cta-button">Return to Homepage</a>
+</body>
+</html>

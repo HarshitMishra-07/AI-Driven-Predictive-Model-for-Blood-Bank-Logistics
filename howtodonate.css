@@ -1,0 +1,198 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general font settings */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+    background-color: white;
+    /* background-image:url('bloodhive_bg.jpg') ;
+    background-size: 100px;
+    background-position:60% 13%; 
+    background-repeat: no-repeat; */
+}
+
+/* Header styles */
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .hero h1 {
+    font-size: 3em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Main Section Styles */
+main {
+    padding:30px 10%;
+    padding-left: 15px;
+}
+
+/* Section Styles */
+.section-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+
+.content-left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    align-items: center;
+    overflow-y: auto;
+}
+
+ .right img {
+    max-width: 100%;
+    height: auto;
+} 
+
+.donation-types {
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.donation-types li {
+    margin-bottom: 15px;
+}
+
+
+h2 {
+    font-size: 3em;
+    color: #7b0000d9;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+h3{
+    font-size: 1.5em;
+    margin-bottom: 10px; 
+    color: black;
+}
+p{
+    font-size: 2em;
+    margin-bottom: 10px; 
+    color: black;
+}
+#eligibility {
+    padding: 20px;
+
+    
+}
+  
+#eligibility h2 {
+    text-align: left;
+    margin-bottom: 20px;
+
+    font-size: 2.8em;
+
+}
+  
+  .content {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Adds space between the text and the image */
+    font-size:1.5em;
+  }
+  
+  .criteria {
+    flex: 3; /* Takes 3 parts of the space */
+  }
+  
+  .eligibility {
+    flex: 2; /* Takes 2 parts of the space */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+  }
+  
+  .eligibility img {
+    max-width: 50%; /* Ensures the image doesn't overflow */
+    height: auto; /* Maintains the aspect ratio */
+  }
+  
+  .checklist {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+  
+  .checklist ul {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
+  
+
+.photo {
+    /* position: absolute; */
+    text-align: center;
+    margin-top: 20px;
+}
+.preparing-tips, .process-steps, .aftercare-tips, .donation-locations {
+    list-style-type:decimal;
+    padding-left: 10px;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Video Container */
+.video-container {
+    margin-top: 30px;
+    text-align: center;
+}
+.video-container video {
+    width: 50%; /* Adjust this percentage as needed for desired video size */
+    max-width: 1000px; /* Optional: sets a maximum width for large screens */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #d32f2f; /* Optional: adds a border for styling */
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Button Styles */

@@ -1,0 +1,59 @@
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-image: url('thanks_image.jpg');
+            background-size: 1300px 600px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        header {
+            background-color: #e53946;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .content h2 {
+            font-size: 2em;
+            color: #3c3c3c;
+        }
+
+        .content p {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            background-color: #e53946;
+            color: white;
+            padding: 15px 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 10px;
+            border: 1px solid white;
+            margin-top: 10px;
+        }
+
+        .cta-button:hover {
+            background-color: orange;
+        }
+
+        footer {
+            background-color: rgba(0,0,0,0.2);
+            color: white;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }

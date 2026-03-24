@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="./contactUs.css">
+    <link rel="icon" href="hivelogo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+<div class="container">
+   
+
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> Blood Hive HQ, Bhauti Pratappur, Kanpur,Uttar Pradesh,209305.</p>
+        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+        <p><strong>Email:</strong> support@bloodhive.com</p>
+
+        <h3>Operating Hours:</h3>
+        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+        <p>Saturday: 10:00 AM - 4:00 PM</p>
+        <p>Sunday: Closed</p>
+
+        <h3>Emergency Contact:</h3>
+        <p>For urgent blood requests or immediate assistance, call our 24/7 hotline: +1 (123) 555-7890</p>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="contactUs_redirect.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option>General Inquiry</option>
+                <option>Blood Donation</option>
+                <option>Blood Request</option>
+                <option>Feedback</option>
+                <option>Other</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="social-media">
+        <h2>Follow Us</h2>
+        <p><a href="https://facebook.com/bloodhive" target="_blank">Facebook: @bloodhiveFB</a></p>
+        <p><a href="https://twitter.com/bloodhive" target="_blank">Twitter: @bloodhiveTWT</a></p>
+        <p><a href="https://instagram.com/bloodhive" target="_blank">Instagram: @bloodhiveIG</a></p>
+    </div>
+</div>
+
+</body>
+</html>

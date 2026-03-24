@@ -1,0 +1,54 @@
+
+    body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 0;
+        padding: 0;
+        
+    }
+    header {
+        background-color: #e53946;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        background-image:url('bloodhive_bg.jpg') ;
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        height: 500px; 
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info, .contact-form, .social-media {
+        margin-bottom: 20px;
+    }
+    .contact-info p, .social-media p {
+        margin: 5px 0;
+    }
+    .social-media a {
+        text-decoration: none;
+        color: #333;
+    }
+    .contact-form input, .contact-form textarea, .contact-form select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    .contact-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #e53946;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .contact-form button:hover {
+        background-color: orange;
+    }

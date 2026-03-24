@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Blood Donations</title>
+    <link rel="stylesheet" href="upcoming.css">
+    <link rel="icon" href="hivelogo.png" type="image/x-icon">
+    <script src="upcoming.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Upcoming Blood Donation Events</h1>
+    </header>
+
+    <section class="banner">
+        <div class="slides">
+            <div class="slide" style="background-image: url('banner1.jpg');">
+                <button class="prev">&lt;</button>/
+                <a href="donation_form.html" class="cta-button">Register Now!<a>
+                <button class="next">&gt;</button>
+            </div>
+            <div class="slide" style="background-image: url('banner2.jpg');">
+                <button class="prev">&lt;</button>
+                <a href="donation_form.html" class="cta-button">Register Now!<a>
+                <button class="next">&gt;</button>
+            </div>
+            <div class="slide" style="background-image: url('banner3.jpg');">
+                <button class="prev">&lt;</button>
+                <a href="donation_form.html" class="cta-button">Register Now!<a>
+                <button class="next">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="calendar">
+        <h2>Find Events by Date</h2>
+        <div class="calendar-container">
+            <div id="calendar-header">
+                <button id="prev-month">&lt;</button>
+                <span id="calendar-title"></span>
+                <button id="next-month">&gt;</button>
+            </div>
+            <div id="calendar-grid">
+                <!-- Calendar grid will be dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <div id="popup" class="hidden">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <h3>Event Details</h3>
+            <p><strong>Date:</strong> <span id="event-date"></span></p>
+            <p><strong>Venue:</strong> <span id="event-venue"></span></p>
+            <p><strong>Time:</strong> <span id="event-time"></span></p>
+            <p><strong>Location:</strong> <span id="event-location"></span></p>
+            <p><strong>Contact:</strong> <span id="event-contact"></span></p>
+            <button id="register-button">Register</button>
+        </div>
+    </div>
+</body>
+</html>

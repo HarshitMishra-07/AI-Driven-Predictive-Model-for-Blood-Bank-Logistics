@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Hive</title>
+    <link rel="stylesheet" href="h.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="projectlogo.png" alt="Logo" style="width: 35%;">
+        </div>
+        
+        <div class="header-content">
+            <h1> BLOOD HIVE</h1>
+            <h3>every drop counts</h3>
+            <p>"Your blood donation is a gift straight from heart"</p>
+        </div>
+        <div class="hamburger-menu" id="hamburger" onclick="toggleMenu()">
+            ☰ 
+        </div>
+        <!-- Sliding Menu -->
+        <nav id="slide-menu">
+            <button class="close-btn" onclick="toggleMenu()">×</button>
+            <ul>
+                <li><h3>USER PROFILE</h3></li>
+                <li><a href="#">Edit Profile</a></li>
+                <hr>
+                <li><h3>DONOR</h3></li>
+                <li><a href="donation_form.html">Donate Blood</a></li>
+                <li><a href="donation_history.html">Donation History</a></li>
+                <hr>
+                <li><h3>RECIPIENT</h3></li>
+                <li><a href="request_form.html">Blood Request</a></li>
+                <li><a href="request_history.html">Request History</a></li>
+                <hr>
+                <li><h3>HELP & SUPPORT</h3></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <hr>
+                <li><h3>MORE INFO</h3></li>
+                <li><a href="bloo.html">Facts about Blood Donation</a></li>
+                <li><a href="https://www.youtube.com/watch?v=M5ADyLmmoIc" target="_blank">Who can be a Donor</a></li>
+                <hr>
+                <li><a href="logout.html">Sign out</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+
+    <!-- Video Section -->
+    <section class="video-section">
+        
+        
+        <video class="intro-video" autoplay muted loop>
+            <source src="videoplayback (online-video-cutter.com).mp4" type="video/mp4">
+        </video>
+    </section>
+
+    
+   
+    <!-- Quick Access Buttons -->
+    <section class="quick-access">
+        <button class="quick-btn"><a href="donation_form.html" class="cta-button">Donate Now</a></button>
+        <button class="quick-btn"><a href="request_form.html" class="cta-button">Request Now</a></button>
+    </section>
+    <h2 class="content-head">CONTENTS</h2>
+    <hr class="cont">
+    <!-- Tabs Section -->
+    <section class="tabs">
+        <a href="howtodonate.html" class="tab tab1">
+            <div class="tab-top">
+                <h3>How to Donate</h3>
+            </div>
+            <div class="tab-bottom">
+                <!-- Centered icon or content can go here if needed -->
+                 <img src="blood-donation-icon.png" alt="" srcset="">
+            </div>
+        </a>
+        <a href="availability.html" class="tab tab2">
+            <div class="tab-top">
+                <h3>Blood Availability</h3>
+            </div>
+            <div class="tab-bottom">
+                <!-- Centered icon or content can go here if needed -->
+                 <img src="blood-type-icon.png" alt="" srcset="">
+            </div>
+        </a>
+        <a href="upcoming.html" class="tab tab3">
+            <div class="tab-top">
+                <h3>Upcoming Donation Drives</h3>
+            </div>
+            <div class="tab-bottom">
+                <!-- Centered icon or content can go here if needed -->
+                 <img src="refugee-camp.png" alt="" srcset="">
+            </div>
+        </a>
+        <a href="faqs.html" class="tab tab4">
+            <div class="tab-top">
+                <h3>FAQs</h3>
+            </div>
+            <div class="tab-bottom">
+                <img src="faq.png" alt="" srcset="">
+            </div>
+        </a>
+        <a href="https://www.google.com/maps/search/blood+banks+near+me" target="_blank" class="tab tab5">
+            <div class="tab-top">
+                <h3>Find Nearest Blood Bank</h3>
+            </div>
+            <div class="tab-bottom">
+                <img src="blood-bank.png" alt="">
+            </div>
+        </a>
+        <!-- Repeat similar structure for other tabs -->
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="#">Privacy & Policy</a></li>
+        </ul>
+        <p>&copy; 2024 Blood Bank Management System</p>
+    </footer>
+    <script>
+        // JavaScript for sliding menu functionality
+        function toggleMenu() {
+            document.getElementById('slide-menu').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Hive</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="hivelogo.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="menu" id="menuu" onclick="toggleMenu()">
+            <img src="account.png" alt="Menu" class="menu-icon">
+        </div>
+         <!-- Sliding Menu -->
+         <nav id="slide-menu">
+            <button class="close-btn" onclick="toggleMenu()">×</button>
+            <ul>
+                <li><h3>USER PROFILE</h3></li>
+                <li><a href="#">Edit Profile</a></li>
+                <hr>
+                <li><h3>DONOR</h3></li>
+                <li><a href="donation_form.html">Donate Blood</a></li>
+                <li><a href="donation_history.html">Donation History</a></li>
+                <hr>
+                <li><h3>RECIPIENT</h3></li>
+                <li><a href="request_form.html">Blood Request</a></li>
+                <li><a href="request_history.html">Request History</a></li>
+                <hr>
+                <li><h3>HELP & SUPPORT</h3></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <hr>
+                <li><h3>MORE INFO</h3></li>
+                <li><a href="bloo.html">Facts about Blood Donation</a></li>
+                <li><a href="https://www.youtube.com/watch?v=M5ADyLmmoIc" target="_blank">Who can be a Donor</a></li>
+                <hr>
+                <li><a href="logout.html">Sign out</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="hivelogo.png" alt="Blood Hive">
+            <span>BLOOD HIVE</span>
+        </div>
+        <div class="slogan">"your blood donation is a gift straight from heart."</div>
+        <div class="login">
+            <button><a href="login.html">Logout</a></button>
+        </div>
+    </header>
+
+    <!-- Video -->
+    <section class="video-section">
+        
+        
+        <video class="intro-video" autoplay muted loop>
+            <source src="videoplayback (online-video-cutter.com).mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <button><a href="donation_form.html">Donate Now</a></button>
+        <button><a href="request_form.html">Request Now</a></button>
+    </div>
+
+    <!-- Content heading -->
+    <div class="contents-heading">
+        <h2>Contents</h2>
+        <hr>
+    </div>
+
+    <!-- Slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <a href="howtodonate.html" class="slider-tab" style="background-image: url('howtodonate.jpg');">
+                <span>Understanding Blood Donation</span>
+            </a>
+            <a href="availability.html" class="slider-tab" style="background-image: url('bloodavail.jpg');">
+                <span>Blood Availability</span>
+            </a>
+            <a href="upcoming.html" class="slider-tab" style="background-image: url('upcomingdrive.jpg');">
+                <span>Upcoming Donation Drives</span>
+            </a>
+            <a href="faqs.html" class="slider-tab" style="background-image: url('faqsimg.jpg');">
+                <span>FAQs</span>
+            </a>
+            <a href="https://www.google.com/maps/search/blood+banks+near+me" class="slider-tab" style="background-image: url('bloodbankimg.jpg');" target="_blank">
+                <span>Find Nearest Blood Bank</span>
+            </a>
+        </div>
+        
+        <button class="next-button" onclick="scrollSlider()">></button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-icons">
+            <a href="https://facebook.com" target="_blank" class="icon"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank" class="icon"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank" class="icon"><img src="instagram.png" alt="Instagram"></a>
+          </div>
+          
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="privacypolicy.html">Privacy & Policy</a></li>
+        </ul>
+        &copy; 2024 Blood Hive. All rights reserved.
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('slide-menu').classList.toggle('open');
+        }
+        function scrollSlider() {
+            const slider = document.querySelector('.slider');
+            slider.scrollBy({ left: 300, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

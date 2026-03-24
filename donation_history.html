@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation History</title>
+  <link rel="stylesheet" href="donation_history.css">
+  <link rel="icon" href="hivelogo.png" type="image/x-icon">
+</head>
+
+<body background="dna_bg.jpg">
+  <header>
+    <div class="header-container">
+      <a href="home.html" class="homepage-icon">
+        <img src="home-icon.png" alt="Home" />
+      </a>
+      <h1>Donation History</h1>
+      <img src="hivelogo.png" alt="Logo" class="logo" />
+    </div>
+    
+  </header>
+
+  <div class="container">
+    <h2>Your Blood Donation History</h2>
+    <table id="donationTable">
+      <thead>
+        <tr>
+          <th>S No.</th>
+          <th>Date</th>
+          <th>Type of Donation</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2024-11-20</td>
+          <td>Whole Blood</td>
+          <td>Bhauti Blood Bank</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2024-06-10</td>
+          <td>Whole Blood</td>
+          <td>Madhulok Hospital</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>2024-03-10</td>
+            <td>Whole Blood</td>
+            <td>Sneh Blood Bank</td>
+          </tr>
+      </tbody>
+    </table>
+    <p class="eligibility-statement">You are eligible to donate blood again in <span id="daysDue"></span> days.</p>
+  </div>
+
+  <script>
+    function calculateEligibility() {
+      const table = document.getElementById("donationTable");
+      const rows = table.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+      const latestDate = rows[0].getElementsByTagName("td")[1].innerText;
+
+      const today = new Date();
+      const lastDonationDate = new Date(latestDate);
+      const nextEligibleDate = new Date(lastDonationDate);
+      nextEligibleDate.setDate(lastDonationDate.getDate() + 56);
+
+      const timeDiff = nextEligibleDate - today;
+      const daysDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+      
+      document.getElementById("daysDue").innerText = daysDiff > 0 ? daysDiff : "0 (You can donate now)";
+    }
+
+    window.onload = calculateEligibility;
+  </script>
+</body>
+</html>
